@@ -31,9 +31,9 @@ ajaxUtils.sendGetRequest =
                        isJsonResponse); 
       };
     request.open("GET", requestUrl, true);
-    request.setRequestHeader('Access-Control-Allow-Origin: *');
-    request.setRequestHeader('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
-    request.setRequestHeader('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
+    request.setRequestHeader('Access-Control-Allow-Origin', '*');
+    request.setRequestHeader('Access-Control-Allow-Methods','GET, POST, PATCH, PUT, DELETE, OPTIONS');
+    request.setRequestHeader('Access-Control-Allow-Headers',' Origin, Content-Type, X-Auth-Token');
     request.send(null); // for POST only
   };
 
