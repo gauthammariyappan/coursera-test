@@ -24,6 +24,7 @@ function getRequestObject() {
 ajaxUtils.sendGetRequest = 
   function(requestUrl, responseHandler, isJsonResponse) {
     var request = getRequestObject();
+    request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
     request.onreadystatechange = 
       function() { 
         handleResponse(request, 
