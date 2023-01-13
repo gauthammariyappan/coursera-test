@@ -31,7 +31,7 @@ ajaxUtils.sendGetRequest =
                        isJsonResponse); 
       };
     request.open("GET", requestUrl, true);
-    request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
+    request.withCredentials = false;
     request.send(null); // for POST only
   };
 
