@@ -24,7 +24,6 @@ function getRequestObject() {
 ajaxUtils.sendGetRequest = 
   function(requestUrl, responseHandler, isJsonResponse) {
     var request = getRequestObject();
-    request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
     request.onreadystatechange = 
       function() { 
         handleResponse(request, 
@@ -32,6 +31,7 @@ ajaxUtils.sendGetRequest =
                        isJsonResponse); 
       };
     request.open("GET", requestUrl, true);
+    request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
     request.send(null); // for POST only
   };
 
