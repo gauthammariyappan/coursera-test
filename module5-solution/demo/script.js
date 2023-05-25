@@ -3,22 +3,6 @@
 // This is a large JavaScript file for testing or demonstration purposes
 
 // Create an array of 1 million numbers
-const array = [];
-for (let i = 0; i < 1000000; i++) {
-  array.push(i);
-}
-
-// Function to find the sum of the array
-function calculateSum(arr) {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-  }
-  return sum;
-}
-
-// Calculate the sum of the array
-const sum = calculateSum(array);
 // console.log("Sum of the array: " + sum);
 
 // Function to find the maximum value in the array
@@ -45,7 +29,7 @@ const evenNumbers = filterEvenNumbers(array);
 // End of the bigScript.js file
 
 function exe(){
-    func1(10);
+  convertUpperCase(10);
 }
 
 function func1(str){
@@ -83,6 +67,23 @@ function func8(str){
 function func9(str){
     convertUpperCase(str);
 }
+
+const array = [];
+for (let i = 0; i < 1000000; i++) {
+  array.push(i);
+}
+
+// Function to find the sum of the array
+function calculateSum(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+
+// Calculate the sum of the array
+const sum = calculateSum(array);
 
 // Function to convert string to uppercase
 function convertUpperCase(str) {
