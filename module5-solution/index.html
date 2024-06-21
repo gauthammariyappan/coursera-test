@@ -44,19 +44,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 // })(window,document,'https://col.localsite24x7.com/rum/resources/beacon/site24x7rum-min.js?appKey=','s247r','596217b62f4386c8c4366c72f17f347c');
 // s247r('setWaterfallsSamplingRate',1);
 
-//local-grid - test acc
-(function(w,d,s,r,k,h,m){
-	if(w.performance && w.performance.timing && w.performance.navigation) {
-		w[r] = w[r] || function(){(w[r].q = w[r].q || []).push(arguments)};
-		h=d.createElement('script');h.async=true;h.setAttribute('src',s+k);
-		d.getElementsByTagName('head')[0].appendChild(h);
-		(m = window.onerror),(window.onerror = function (b, c, d, f, g) {
-		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
-	}
-})(window,document,'https://col.localsite24x7.com/rum/resources/beacon/site24x7rum-min.js?appKey=','s247r','e026ca946b95203e015c66be2e4629d6');
-s247r('setWaterfallsSamplingRate',1);
 	
-//live
+
+//local-grid - test acc
 // (function(w,d,s,r,k,h,m){
 // 	if(w.performance && w.performance.timing && w.performance.navigation) {
 // 		w[r] = w[r] || function(){(w[r].q = w[r].q || []).push(arguments)};
@@ -65,7 +55,19 @@ s247r('setWaterfallsSamplingRate',1);
 // 		(m = window.onerror),(window.onerror = function (b, c, d, f, g) {
 // 		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
 // 	}
-// })(window,document,'//static.site24x7rum.com/beacon/site24x7rum-min.js?appKey=','s247r','fa4c011b8de19d1ee8e8138ca3047723');
+// })(window,document,'https://col.localsite24x7.com/rum/resources/beacon/site24x7rum-min.js?appKey=','s247r','e026ca946b95203e015c66be2e4629d6');
+// s247r('setWaterfallsSamplingRate',1);
+	
+//live
+(function(w,d,s,r,k,h,m){
+	if(w.performance && w.performance.timing && w.performance.navigation) {
+		w[r] = w[r] || function(){(w[r].q = w[r].q || []).push(arguments)};
+		h=d.createElement('script');h.async=true;h.setAttribute('src',s+k);
+		d.getElementsByTagName('head')[0].appendChild(h);
+		(m = window.onerror),(window.onerror = function (b, c, d, f, g) {
+		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
+	}
+})(window,document,'//static.site24x7rum.com/beacon/site24x7rum-min.js?appKey=','s247r','abdf8a575a3af5c0b0253e7a09a48845');
 
 
 //live - EU
