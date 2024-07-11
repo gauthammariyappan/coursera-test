@@ -47,18 +47,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	
 
 //local-grid - test acc
-// (function(w,d,s,r,k,h,m){
-// 	if(w.performance && w.performance.timing && w.performance.navigation) {
-// 		w[r] = w[r] || function(){(w[r].q = w[r].q || []).push(arguments)};
-// 		h=d.createElement('script');h.async=true;h.setAttribute('src',s+k);
-// 		d.getElementsByTagName('head')[0].appendChild(h);
-// 		(m = window.onerror),(window.onerror = function (b, c, d, f, g) {
-// 		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
-// 	}
-// })(window,document,'https://col.localsite24x7.com/rum/resources/beacon/site24x7rum-min.js?appKey=','s247r','e026ca946b95203e015c66be2e4629d6');
-// s247r('setWaterfallsSamplingRate',1);
-	
-//live
 (function(w,d,s,r,k,h,m){
 	if(w.performance && w.performance.timing && w.performance.navigation) {
 		w[r] = w[r] || function(){(w[r].q = w[r].q || []).push(arguments)};
@@ -67,7 +55,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		(m = window.onerror),(window.onerror = function (b, c, d, f, g) {
 		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
 	}
-})(window,document,'//static.site24x7rum.com/beacon/site24x7rum-min.js?appKey=','s247r','abdf8a575a3af5c0b0253e7a09a48845');
+})(window,document,'https://col.localsite24x7.com/rum/resources/beacon/site24x7rum-min.js?appKey=','s247r','596217b62f4386c8c4366c72f17f347c');
+s247r('setWaterfallsSamplingRate',1);
+	
+//live
+// (function(w,d,s,r,k,h,m){
+// 	if(w.performance && w.performance.timing && w.performance.navigation) {
+// 		w[r] = w[r] || function(){(w[r].q = w[r].q || []).push(arguments)};
+// 		h=d.createElement('script');h.async=true;h.setAttribute('src',s+k);
+// 		d.getElementsByTagName('head')[0].appendChild(h);
+// 		(m = window.onerror),(window.onerror = function (b, c, d, f, g) {
+// 		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
+// 	}
+// })(window,document,'//static.site24x7rum.com/beacon/site24x7rum-min.js?appKey=','s247r','abdf8a575a3af5c0b0253e7a09a48845');
 
 
 //live - EU
@@ -157,6 +157,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <button type="button" style="background-color: #008CBA;" onclick="case4()">Case 4</button>
 <button type="button" style="background-color: #008CBA;" onclick="case5_func1()">Case 5</button>
 <button type="button" style="background-color: #008CBA;" onclick="exe()">demo</button>
+<button type="button" style="background-color: #008CBA;" onclick="largeErr()">BIGFILE</button>
+
 
   <div id="call-btn" class="visible-xs">
     <a class="btn" href="tel:410-602-5008">
